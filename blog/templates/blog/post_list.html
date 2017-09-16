@@ -7,16 +7,12 @@
 			<h1><a href="">Bella's blog</a></h1>
 		</div>
 
+		{% for post in posts %}
 		<div>
-			<p>published: 15.09.2017, 13:43</p>
-			<h2><a href="">My first post</a></h2>
-			<p>Roll over and sun my belly meow go back to sleep owner brings food and water tries to pet on head, so scratch get sprayed by water because bad cat</p>
+			<p>published: {{ post.published_date }}</p>
+			<h1><a href="">{{ post.title }}</a></h1>
+			<p>{{ post.text|linebreaksbr }}</p>
 		</div>
-
-		<div>
-			<p>published: 15.09.2017, 13:44</p>
-			<h2><a href="">Be a nyan cat, feel great about it, be annoying 24/7 poop rainbows in litter box all day thug cat if it fits, i sits</a></h2>
-			<p>Licks your face chase the pig around the house, and kitty poochy have secret plans or where is my slave? I'm getting hungry show belly. Leave fur on owners clothes throwup on your pillow, but proudly present butt to human dream about hunting birds slap kitten brother with paw have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat plays league of legends. Leave fur on owners clothes brown cats with pink ears, so poop in litter box, scratch the walls caticus cuteicus. Loved it, hated it, loved it, hated it sun bathe kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff or cat slap dog in face but bleghbleghvomit my furball really tie the room together. Eat the fat cats food poop in the plant pot if it smells like fish eat as much as you wish chase laser. Sniff other cat's butt and hang jaw half open thereafter cats secretly make all the worlds muffins. Unwrap toilet paper all of a sudden cat goes crazy, yet scratch the postman wake up lick paw wake up owner meow meow kitty kitty and hate dog, or purr but flee in terror at cucumber discovered on floor. Steal the warm chair right after you get up lick yarn hanging out of own butt. My left donut is missing, as is my right lick the other cats for touch water with paw then recoil in horror and cough hairball on conveniently placed pants. Intently stare at the same spot. Vommit food and eat it again adventure always i am the best hunt by meowing loudly at 5am next to human slave food dispenser so spread kitty litter all over house. Refuse to drink water except out of someone's glass touch water with paw then recoil in horror yet and sometimes switches in french and say "miaou" just because well why not. Ask to go outside and ask to come inside and ask to go outside and ask to come inside love to play with owner's hair tie but missing until dinner time, yet behind the couch. Jump off balcony, onto stranger's head mark territory. Play time toy mouse squeak roll over chase ball of string give attitude Gate keepers of hell. </p>
-		</div>
+		{% endfor %}
 	</body>
 </html>
